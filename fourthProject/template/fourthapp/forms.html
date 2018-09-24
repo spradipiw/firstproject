@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Forms</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<h1>Please fill out the forms</h1>
+
+    <div class = "container">
+    <form method="post">
+
+    <!.as_p makes forms looks like paragraph!>
+
+    {{fill_form.as_p}}
+
+    <!does not give error page after clicking submit button!>
+
+    {% csrf_token %}
+
+
+    <input type="submit" class="btn btn-primary" value="Submit">
+    </form>
+
+</div>
+
+</body>
+</html>
